@@ -1,0 +1,543 @@
+annotations:
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 0
+    text_bold: true
+    text_content: CCNA - FHRP
+    text_font: sans-serif
+    text_italic: false
+    text_size: 24
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -400.0
+    y1: -240.0
+    z_index: 0
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 0
+    text_bold: false
+    text_content: HSRP configuration redundancy demonstration
+    text_font: sans-serif
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -400.0
+    y1: -200.0
+    z_index: 1
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: hostname SW1
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: SW1
+    node_definition: ioll2-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: 280
+    y: -120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: SW3
+    node_definition: unmanaged_switch
+    parameters: {}
+    ram: null
+    tags: []
+    x: -40
+    y: -120
+    interfaces:
+      - id: i0
+        label: port0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i1
+        label: port1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i2
+        label: port2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i3
+        label: port3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i4
+        label: port4
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i5
+        label: port5
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i6
+        label: port6
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i7
+        label: port7
+        mac_address: null
+        type: physical
+        slot: 7
+  - boot_disk_size: null
+    configuration: []
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: SW4
+    node_definition: unmanaged_switch
+    parameters: {}
+    ram: null
+    tags: []
+    x: -40
+    y: 120
+    interfaces:
+      - id: i0
+        label: port0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i1
+        label: port1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i2
+        label: port2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i3
+        label: port3
+        mac_address: null
+        type: physical
+        slot: 3
+      - id: i4
+        label: port4
+        mac_address: null
+        type: physical
+        slot: 4
+      - id: i5
+        label: port5
+        mac_address: null
+        type: physical
+        slot: 5
+      - id: i6
+        label: port6
+        mac_address: null
+        type: physical
+        slot: 6
+      - id: i7
+        label: port7
+        mac_address: null
+        type: physical
+        slot: 7
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: hostname SW2
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: SW2
+    node_definition: ioll2-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: 280
+    y: 120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 3477 bytes\n\
+          !\n! Last configuration change at 03:34:35 UTC Wed Sep 24 2025\n!\nversion\
+          \ 17.16\nservice timestamps debug datetime msec\nservice timestamps log\
+          \ datetime msec\n!\nhostname R1\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\nip dhcp excluded-address 192.168.1.1 192.168.1.50\n!\nip dhcp pool POOL1\n\
+          \ network 192.168.1.0 255.255.255.0\n default-router 192.168.1.1\n dns-server\
+          \ 1.1.1.1 8.8.8.8\n!\n!\n!\nip cef\nlogin on-success log\nno ipv6 cef\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-131184674\n\
+          \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-131184674\n\
+          \ revocation-check none\n rsakeypair TP-self-signed-131184674\n hash sha512\n\
+          !\n!\ncrypto pki certificate chain TP-self-signed-131184674\n certificate\
+          \ self-signed 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886\
+          \ F70D0101 0D050030\n  30312E30 2C060355 04030C25 494F532D 53656C66 2D536967\
+          \ 6E65642D 43657274\n  69666963 6174652D 31333131 38343637 34301E17 0D323530\
+          \ 39323430 33333231\n  365A170D 33353039 32343033 33323136 5A303031 2E302C06\
+          \ 03550403 0C25494F\n  532D5365 6C662D53 69676E65 642D4365 72746966 69636174\
+          \ 652D3133 31313834\n  36373430 82012230 0D06092A 864886F7 0D010101 05000382\
+          \ 010F0030 82010A02\n  82010100 D9354586 F71A340A AF6DC186 A01AB8B5 FF6A20AA\
+          \ C0223425 4F85C51E\n  E2DF4DF1 AC9D93C9 E1749F5C BD603373 DE878BFB 79B236E8\
+          \ 682C4339 820E6860\n  EAC338D9 E78F63FB B0C6FB2C 1ECE923E AD18E543 B68A5C32\
+          \ 615C0FFC 137CD2DC\n  EB3E5808 AF600421 F04B1014 140F5F7D 6AE57923 41F31CEC\
+          \ 556FA0AF A621A342\n  A58EE58C D6A5A3B8 11B76CA6 3B4DDAA0 5B824CBD 3DA01FF1\
+          \ B50C0C67 BBB99DA4\n  FFBEEE8F 8D656B2C CE398C63 1569419F C0FDAB65 A391E730\
+          \ 9AF1A155 2DBB3FF8\n  6EDA946F 25A2F593 76E65188 481C8795 47DCF509 85E0CF0A\
+          \ C890F5D7 F4DE3CAE\n  2A472185 5BFF2C97 ABB3310C C478609E EEC828C4 FCE90686\
+          \ 95188F83 683E957F\n  C3FA2AE3 02030100 01A35330 51301D06 03551D0E 04160414\
+          \ 528C1E7E 8B23308B\n  E2D76867 2FD9083B 3F53962C 301F0603 551D2304 18301680\
+          \ 14528C1E 7E8B2330\n  8BE2D768 672FD908 3B3F5396 2C300F06 03551D13 0101FF04\
+          \ 05300301 01FF300D\n  06092A86 4886F70D 01010D05 00038201 01008C70 1BC65861\
+          \ C7EF02C4 F8E46DB9\n  B7BE30CB 14738B6E 8FBABF54 513C73A0 D734E41C 49BFEAE7\
+          \ 137F7893 79E48F6B\n  C5A752D8 772A3BD8 D0487479 E1DA911D 074E0479 2B094B61\
+          \ E4472CAF 470D0CC5\n  A8675E71 EF91BF97 22D83498 62CCED63 A6AD8AB9 092487D9\
+          \ D8A3BAB9 637F7698\n  F9FCFAED 4C7EECAE 947CAE27 8D499F49 35AF0584 2195B933\
+          \ 2D6059A6 BF86ABF6\n  40E434A0 F6D7C446 EDCC468A E91DEC49 60B14E07 B329238A\
+          \ 8BA1348A DFD9EB7D\n  8C31D527 EACEE4E4 C8C351D2 A86ED128 8F7269F7 8DBEB1FA\
+          \ 175B85E2 32F06BBD\n  5E0D618E 5CA94307 8797C08F D5EEBB09 6349F92F FE5DE8A5\
+          \ 0678E510 EC468354\n  4A7A036F 388DDE4E 835E4610 3E44C445 83BB\n  \tquit\n\
+          !\n!\nmemory free low-watermark processor 79983\n!\n!\nspanning-tree mode\
+          \ rapid-pvst\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\ninterface Loopback0\n ip address 172.1.1.1 255.255.255.255\n\
+          !\ninterface Ethernet0/0\n ip address 192.168.1.2 255.255.255.0\n standby\
+          \ version 2\n standby 1 ip 192.168.1.1\n standby 1 priority 110\n standby\
+          \ 1 preempt\n!\ninterface Ethernet0/1\n no ip address\n shutdown\n!\ninterface\
+          \ Ethernet0/2\n no ip address\n shutdown\n!\ninterface Ethernet0/3\n no\
+          \ ip address\n shutdown\n!\nip forward-protocol nd\nip forward-protocol\
+          \ udp\n!\n!\nip http server\nip http secure-server\nip ssh bulk-mode 131072\n\
+          no logging btrace\n!\n!\n!\ncontrol-plane\n!\n!\n!\nline con 0\n exec-timeout\
+          \ 0 0\n logging synchronous\nline aux 0\nline vty 0 4\n exec-timeout 0 0\n\
+          \ login\n transport input ssh\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: R1
+    node_definition: iol-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: -160
+    y: -120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 3453 bytes\n\
+          !\n! Last configuration change at 03:34:35 UTC Wed Sep 24 2025\n!\nversion\
+          \ 17.16\nservice timestamps debug datetime msec\nservice timestamps log\
+          \ datetime msec\n!\nhostname R2\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\nip dhcp excluded-address 192.168.1.1 192.168.1.50\n!\nip dhcp pool VLAN1\n\
+          \ network 192.168.1.0 255.255.255.0\n default-router 192.168.1.1\n dns-server\
+          \ 1.1.1.1 8.8.8.8\n!\n!\n!\nip cef\nlogin on-success log\nno ipv6 cef\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-131184675\n\
+          \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-131184675\n\
+          \ revocation-check none\n rsakeypair TP-self-signed-131184675\n hash sha512\n\
+          !\n!\ncrypto pki certificate chain TP-self-signed-131184675\n certificate\
+          \ self-signed 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886\
+          \ F70D0101 0D050030\n  30312E30 2C060355 04030C25 494F532D 53656C66 2D536967\
+          \ 6E65642D 43657274\n  69666963 6174652D 31333131 38343637 35301E17 0D323530\
+          \ 39323430 32343334\n  365A170D 33353039 32343032 34333436 5A303031 2E302C06\
+          \ 03550403 0C25494F\n  532D5365 6C662D53 69676E65 642D4365 72746966 69636174\
+          \ 652D3133 31313834\n  36373530 82012230 0D06092A 864886F7 0D010101 05000382\
+          \ 010F0030 82010A02\n  82010100 B79CA525 729FF917 11F68311 5ADC7FDD 199A51D9\
+          \ 0898127C C801465D\n  C8309547 6AC6237F 28E144C5 403C98FF BA8C71D1 BB21AD0C\
+          \ 529F3098 15EB6CEB\n  F41D3CA4 A3F1C822 21513C00 6384F126 7AD50F4C 3025D5C5\
+          \ 4348FBF3 3EFC04FE\n  815DDF40 FFEB8646 E96D7551 F7764FBB 9CD168BF 8CDAA770\
+          \ F49BC492 4ECAC26C\n  36BFD3E0 640F23B9 E6786A7A 8DAFAEC0 F3E204D5 CEBD4C12\
+          \ 387C3638 7FBCEF4C\n  8E645DC8 6BD4CF0C CB4E2E86 A38CCD39 97A27A7E AAB6EA72\
+          \ 3B08D2CE 4E0204EB\n  15B85A9C D2C98CF4 A4BEFF90 651B6671 A156B3D1 88CFB728\
+          \ 8FE69B70 4B92C9D4\n  96DA8F7F 02FDD853 52D38E3B D04AB418 43A80CDD 2B7FDF96\
+          \ B33A3196 E8CFD71B\n  8C63E9BF 02030100 01A35330 51301D06 03551D0E 04160414\
+          \ CF956725 2F9CF04C\n  2702A6BB A4083488 8DB2E9EF 301F0603 551D2304 18301680\
+          \ 14CF9567 252F9CF0\n  4C2702A6 BBA40834 888DB2E9 EF300F06 03551D13 0101FF04\
+          \ 05300301 01FF300D\n  06092A86 4886F70D 01010D05 00038201 01005D46 E627092C\
+          \ A14E200A 44D85034\n  05E74462 3D045983 B2B99542 36B5F122 CCAACFF9 99573604\
+          \ DC07C3C0 91A0D726\n  98046D12 A74A814C 55FF739A D4BFCD5D 8F83B2C5 03391790\
+          \ FBB08377 BE0E2F49\n  902D7E18 73A46125 A351F141 1F8B4844 490D04D0 4E640C0D\
+          \ 36E89C22 B640E633\n  6D179E5C DA2E0591 C12A966A 2D4E663A 68A91B7A 4CE63D32\
+          \ EECEB866 C7688B84\n  6385D260 21903D04 A15EF32B 0426CC8E C16908C9 9353B85B\
+          \ C9C757B1 BB5DCC09\n  A7E754EB CA4DA434 E6A8664D 6AEAAC42 FAFD3BEC 3DFFEAAE\
+          \ 71AD0E9C BA6FD154\n  F7961467 3DC95615 1528D7E7 E99C8AA0 EA58217E 5E61C766\
+          \ DFEDDBE5 BFCBE6E5\n  34B89DDD 9F8EF004 9F24F961 42A1167E 11AC\n  \tquit\n\
+          !\n!\nmemory free low-watermark processor 79983\n!\n!\nspanning-tree mode\
+          \ rapid-pvst\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\ninterface Loopback0\n ip address 172.2.2.2 255.255.255.255\n\
+          !\ninterface Ethernet0/0\n ip address 192.168.1.3 255.255.255.0\n standby\
+          \ version 2\n standby 1 ip 192.168.1.1\n standby 1 preempt\n!\ninterface\
+          \ Ethernet0/1\n no ip address\n shutdown\n!\ninterface Ethernet0/2\n no\
+          \ ip address\n shutdown\n!\ninterface Ethernet0/3\n no ip address\n shutdown\n\
+          !\nip forward-protocol nd\nip forward-protocol udp\n!\n!\nip http server\n\
+          ip http secure-server\nip ssh bulk-mode 131072\nno logging btrace\n!\n!\n\
+          !\ncontrol-plane\n!\n!\n!\nline con 0\n exec-timeout 0 0\n logging synchronous\n\
+          line aux 0\nline vty 0 4\n exec-timeout 0 0\n login\n transport input ssh\n\
+          !\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n5
+    image_definition: null
+    label: R2
+    node_definition: iol-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: -160
+    y: 120
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: node.cfg
+        content: |-
+          # this is a shell script which will be sourced at boot
+          hostname PC1
+          # configurable user account
+          USERNAME=cisco
+          PASSWORD=cisco
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n6
+    image_definition: null
+    label: PC1
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 440
+    y: -120
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration:
+      - name: node.cfg
+        content: |-
+          # this is a shell script which will be sourced at boot
+          hostname PC2
+          # configurable user account
+          USERNAME=cisco
+          PASSWORD=cisco
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n7
+    image_definition: null
+    label: PC2
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 440
+    y: 120
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+links:
+  - id: l0
+    n1: n2
+    n2: n1
+    i1: i0
+    i2: i0
+    conditioning: {}
+    label: unmanaged-switch-1-port0<->unmanaged-switch-0-port0
+  - id: l1
+    n1: n1
+    n2: n0
+    i1: i3
+    i2: i3
+    conditioning: {}
+    label: unmanaged-switch-0-port3<->iol-l2-0-Ethernet0/2
+  - id: l2
+    n1: n0
+    n2: n3
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: iol-l2-0-Ethernet0/0<->iol-l2-1-Ethernet0/0
+  - id: l3
+    n1: n3
+    n2: n2
+    i1: i3
+    i2: i2
+    conditioning: {}
+    label: iol-l2-1-Ethernet0/2<->unmanaged-switch-1-port2
+  - id: l4
+    n1: n1
+    n2: n4
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: unmanaged-switch-0-port2<->iol-0-Ethernet0/0
+  - id: l5
+    n1: n2
+    n2: n5
+    i1: i3
+    i2: i1
+    conditioning: {}
+    label: unmanaged-switch-1-port3<->iol-1-Ethernet0/0
+  - id: l6
+    n1: n0
+    n2: n2
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: SW1-Ethernet0/1<->SW4-port1
+  - id: l7
+    n1: n3
+    n2: n1
+    i1: i2
+    i2: i1
+    conditioning: {}
+    label: SW2-Ethernet0/1<->SW3-port1
+  - id: l8
+    n1: n6
+    n2: n0
+    i1: i0
+    i2: i4
+    conditioning: {}
+    label: PC1-eth0<->SW1-Ethernet0/3
+  - id: l9
+    n1: n7
+    n2: n3
+    i1: i0
+    i2: i4
+    conditioning: {}
+    label: PC2-eth0<->SW2-Ethernet0/3
+lab:
+  description: HSRP configuration redundancy demonstration
+  notes: ''
+  title: 05 - CCNA - FHRP
+  version: 0.3.0

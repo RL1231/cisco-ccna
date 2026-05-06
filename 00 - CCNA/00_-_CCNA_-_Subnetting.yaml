@@ -1,0 +1,681 @@
+annotations:
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#53D0FF'
+    rotation: 0
+    text_bold: false
+    text_content: 192.168.1.0/26
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -360.0
+    y1: 40.0
+    z_index: 0
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#53D0FF'
+    rotation: 0
+    text_bold: false
+    text_content: 192.168.1.64/26
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: 160.0
+    y1: 40.0
+    z_index: 1
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#53D0FF'
+    rotation: 0
+    text_bold: false
+    text_content: |-
+      192.168.1.128/30
+       Point-to-Point
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -120.0
+    y1: 40.0
+    z_index: 2
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 0
+    text_bold: true
+    text_content: CCNA - Subnetting
+    text_font: sans-serif
+    text_italic: false
+    text_size: 24
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -40.0
+    y1: -240.0
+    z_index: 3
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#FFFFFF'
+    rotation: 0
+    text_bold: false
+    text_content: |-
+      A LAN network divided into 3 subnets
+      for subnetting demostration
+    text_font: sans-serif
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -40.0
+    y1: -200.0
+    z_index: 4
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#53D0FF'
+    rotation: 0
+    text_bold: false
+    text_content: 10.0.0.0/24
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -240.0
+    y1: -160.0
+    z_index: 5
+smart_annotations: []
+nodes:
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 3655 bytes\n\
+          !\n! Last configuration change at 03:09:48 UTC Wed Sep 24 2025\n!\nversion\
+          \ 17.16\nservice timestamps debug datetime msec\nservice timestamps log\
+          \ datetime msec\n!\nhostname R1\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\nip dhcp pool LAN1\n network 192.168.1.0 255.255.255.192\n default-router\
+          \ 192.168.1.1\n dns-server 1.1.1.1 8.8.8.8\n!\nip dhcp pool LAN2\n network\
+          \ 192.168.1.64 255.255.255.192\n default-router 192.168.1.65\n dns-server\
+          \ 1.1.1.1 8.8.8.8\n!\n!\n!\nip name-server 1.1.1.1 8.8.8.8\nip cef\nlogin\
+          \ on-success log\nno ipv6 cef\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki\
+          \ trustpoint TP-self-signed-131184641\n enrollment selfsigned\n subject-name\
+          \ cn=IOS-Self-Signed-Certificate-131184641\n revocation-check none\n rsakeypair\
+          \ TP-self-signed-131184641\n hash sha512\n!\n!\ncrypto pki certificate chain\
+          \ TP-self-signed-131184641\n certificate self-signed 01\n  3082032E 30820216\
+          \ A0030201 02020101 300D0609 2A864886 F70D0101 0D050030\n  30312E30 2C060355\
+          \ 04030C25 494F532D 53656C66 2D536967 6E65642D 43657274\n  69666963 6174652D\
+          \ 31333131 38343634 31301E17 0D323530 39323430 33303730\n  315A170D 33353039\
+          \ 32343033 30373031 5A303031 2E302C06 03550403 0C25494F\n  532D5365 6C662D53\
+          \ 69676E65 642D4365 72746966 69636174 652D3133 31313834\n  36343130 82012230\
+          \ 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02\n  82010100 A80FC1C8\
+          \ 4AFA0C14 B125C8F4 075B8676 4EC435A4 B134631F E5F2815B\n  D3DC0C82 D0C0BDF5\
+          \ D658CDF3 1C077F44 A9B79080 A09A9335 9595B16D DF09738A\n  2282BF37 EF0AC255\
+          \ 7BD28D91 2FAF5813 0D0C9748 8BEE7B02 AD091CB8 EFA95807\n  D0F2252D EBE4B3A9\
+          \ BF246433 E232858B CB940BF3 2B648987 582AAABB A691329C\n  86803B26 F1F0C826\
+          \ 70D5F5A5 23495D4B EFFB22CE 54014380 1044EED5 E2B7A102\n  DB82CC4A EABA93E7\
+          \ 0DD35FD6 1B2E0A7C C3345964 6C597343 C3454887 B299A6CE\n  82D0BCD4 8257322E\
+          \ EDE950BB AA0CD32D D2A463BD C0BF4CD6 5EC23A39 EA272172\n  0D2ACF9C 0424785A\
+          \ 4F7F4709 8A7786AA C9C618AE 0262AE3B 170B9A8C 500A242F\n  CB8E1093 02030100\
+          \ 01A35330 51301D06 03551D0E 04160414 9F2B18FF 58C2822E\n  1AFD5AE7 9416C440\
+          \ 8130440D 301F0603 551D2304 18301680 149F2B18 FF58C282\n  2E1AFD5A E79416C4\
+          \ 40813044 0D300F06 03551D13 0101FF04 05300301 01FF300D\n  06092A86 4886F70D\
+          \ 01010D05 00038201 01000EDE 72FC948C 5B2ED02C 8141B58C\n  2A961308 C147C6D7\
+          \ F7673972 B55ACBDD 885BF576 23FF4AB5 12A3F18D 821CB0FF\n  2E8A6A25 79380EE7\
+          \ 6FC1D5C0 7EACD30F 32FBBF52 3770F8D5 2C15BC2E 6456FCCA\n  CE08419C 6C964DFD\
+          \ 48C7B892 10E812DD 819A300D 3F6E6B2D AF8C5B45 091B10E9\n  E9B17C91 B98F0E9D\
+          \ BA77405B 713640B7 A95F0359 9AEEBB83 2848FB8D 9436CFC9\n  3EE21548 A8868D28\
+          \ E2BF9692 9C56900B 16B144CF AA4B7A08 058FDA81 A8EBE3A5\n  5D60D5AD 1033585B\
+          \ BD993726 171724DB E05910BE 8B8F74A2 99D9A43B 19A9BA31\n  45C8AA9C 13F47904\
+          \ 9BE8516B 42A448A3 56B898DA DC750580 8804B421 FC6A03F5\n  08D74A57 C31F81BE\
+          \ 7D8BA09D 163C3E41 EF0F\n  \tquit\n!\n!\nmemory free low-watermark processor\
+          \ 79983\n!\n!\nspanning-tree mode rapid-pvst\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Ethernet0/0\n ip address\
+          \ dhcp\n ip nat outside\n!\ninterface Ethernet0/1\n ip address 192.168.1.129\
+          \ 255.255.255.252\n ip nat inside\n!\ninterface Ethernet0/2\n ip address\
+          \ 192.168.1.1 255.255.255.192\n ip nat inside\n!\ninterface Ethernet0/3\n\
+          \ no ip address\n shutdown\n!\nip forward-protocol nd\nip forward-protocol\
+          \ udp\n!\n!\nip http server\nip http secure-server\nip nat inside source\
+          \ list 1 interface Ethernet0/0 overload\nip route 192.168.1.64 255.255.255.192\
+          \ 192.168.1.130\nip ssh bulk-mode 131072\nno logging btrace\nip access-list\
+          \ standard 1\n 10 permit 192.168.1.0 0.0.0.255\n!\n!\n!\ncontrol-plane\n\
+          !\n!\n!\nline con 0\n exec-timeout 0 0\n logging synchronous\nline aux 0\n\
+          line vty 0 4\n exec-timeout 0 0\n login\n transport input ssh\n!\n!\n!\n\
+          !\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: R1
+    node_definition: iol-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: -120
+    y: -40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: "Building configuration...\n\nCurrent configuration : 3354 bytes\n\
+          !\n! Last configuration change at 03:09:48 UTC Wed Sep 24 2025\n!\nversion\
+          \ 17.16\nservice timestamps debug datetime msec\nservice timestamps log\
+          \ datetime msec\n!\nhostname R2\n!\nboot-start-marker\nboot-end-marker\n\
+          !\n!\nno logging console\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\nip cef\nlogin on-success log\nno ipv6 cef\n!\n!\n!\n!\n!\n!\n\
+          !\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-131184642\n enrollment\
+          \ selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-131184642\n revocation-check\
+          \ none\n rsakeypair TP-self-signed-131184642\n hash sha512\n!\n!\ncrypto\
+          \ pki certificate chain TP-self-signed-131184642\n certificate self-signed\
+          \ 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 0D050030\n\
+          \  30312E30 2C060355 04030C25 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+          \  69666963 6174652D 31333131 38343634 32301E17 0D323530 39323430 33303730\n\
+          \  375A170D 33353039 32343033 30373037 5A303031 2E302C06 03550403 0C25494F\n\
+          \  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3133 31313834\n\
+          \  36343230 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02\n\
+          \  82010100 9199A89F 51D984F4 F5869048 1C2F8E5D 08CE2B94 4D340F02 8CE002FE\n\
+          \  BBD8B546 5705E8B5 DDEC4A85 35065BD3 1028DBF6 C8261605 D7172C2A 2034FF56\n\
+          \  CD7089E3 D9E1A8C0 12F613DF 544B1738 DA86814B 2D30E0F4 78A610C7 5C56349E\n\
+          \  3DF69208 4B059FC6 7F046337 1C6D07C5 E1E5CE1E 2084A8DA 4235DD3A A1704FF1\n\
+          \  E92C8AF8 5C1C3FC1 55C4357D 9593CB9C CDB7B136 A0586F1A A11682BE 7BA9FB8A\n\
+          \  13A48357 C8D29536 5DEE6680 9F062D34 0629BEAE A95DB6D5 C8AFA252 96AE8AE5\n\
+          \  B4870E2D 62A93A03 350439F8 ECD1E2EE 17DDCEC0 60963F75 523DA8ED 442C1736\n\
+          \  5F2E7C20 058FF0AA B3840F6F 307D0889 37324EB0 C141289F E98CF1F6 1D3925B3\n\
+          \  E295E3C1 02030100 01A35330 51301D06 03551D0E 04160414 81F65046 81B43D3B\n\
+          \  07338358 2A9CF50E BB935449 301F0603 551D2304 18301680 1481F650 4681B43D\n\
+          \  3B073383 582A9CF5 0EBB9354 49300F06 03551D13 0101FF04 05300301 01FF300D\n\
+          \  06092A86 4886F70D 01010D05 00038201 01006CF6 DD8F09E7 F6737C31 18B1A9CD\n\
+          \  8D39F60F 3D58064C F2B647AF 3DB9691A 983B629B DADB0A0E 161EE600 81481D78\n\
+          \  BC562338 B63C39DC 22C68C20 BEB80EBA 5A58DB52 00EECCE0 508DB190 42776B4B\n\
+          \  A9BDF000 CED4D865 32ED4CE0 1AD67144 9B439E7F 59031DB2 20DCBB74 53709A31\n\
+          \  6A2C6B07 4E772409 4A96CFE2 E6606E13 EF185183 858E6297 5367849D FB7BC1C4\n\
+          \  9E0D2C98 CC34116B 3A8C64B0 52302E44 C2199014 74413E52 4ACFD455 E2E8D8FB\n\
+          \  9AAB0E3A 9989572A 212144E2 8CC73DEA 3C029BBC 73624487 F79554E3 A9E68269\n\
+          \  7FB0DA86 76C3C894 B55BD8C2 2E3AAB28 27D60ADB 43173E29 E69AD917 444D94FD\n\
+          \  DD65F3B4 4D13ED2E B8CFDBDF F8652F5F 41E3\n  \tquit\n!\n!\nmemory free\
+          \ low-watermark processor 79983\n!\n!\nspanning-tree mode rapid-pvst\n!\n\
+          !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface\
+          \ Ethernet0/0\n ip address 192.168.1.65 255.255.255.192\n ip helper-address\
+          \ 192.168.1.129\n!\ninterface Ethernet0/1\n ip address 192.168.1.130 255.255.255.252\n\
+          !\ninterface Ethernet0/2\n no ip address\n shutdown\n!\ninterface Ethernet0/3\n\
+          \ no ip address\n shutdown\n!\nip forward-protocol nd\nip forward-protocol\
+          \ udp\n!\n!\nip http server\nip http secure-server\nip route 0.0.0.0 0.0.0.0\
+          \ 192.168.1.129\nip route 10.0.0.0 255.255.255.0 192.168.1.129\nip route\
+          \ 192.168.1.0 255.255.255.192 192.168.1.129\nip ssh bulk-mode 131072\nno\
+          \ logging btrace\n!\n!\n!\ncontrol-plane\n!\n!\n!\nline con 0\n exec-timeout\
+          \ 0 0\n logging synchronous\nline aux 0\nline vty 0 4\n exec-timeout 0 0\n\
+          \ login\n transport input ssh\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: R2
+    node_definition: iol-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: 40
+    y: -40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: default
+        content: System Bridge
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: Internet
+    node_definition: external_connector
+    parameters: {}
+    ram: null
+    tags: []
+    x: -120
+    y: -240
+    interfaces:
+      - id: i0
+        label: port
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 926 bytes
+          !
+          ! Last configuration change at 03:09:48 UTC Wed Sep 24 2025
+          !
+          version 17.16
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          !
+          hostname SW1
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          no aaa new-model
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          ip audit notify log
+          ip audit po max-events 100
+          ip cef
+          login on-success log
+          no ipv6 cef
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          memory free low-watermark processor 79497
+          !
+          !
+          spanning-tree mode rapid-pvst
+          spanning-tree extend system-id
+          !
+          !
+          vlan internal allocation policy ascending
+          !
+          !
+          !
+          !
+          !
+          interface Ethernet0/0
+          !
+          interface Ethernet0/1
+          !
+          interface Ethernet0/2
+          !
+          interface Ethernet0/3
+          !
+          ip forward-protocol nd
+          ip forward-protocol udp
+          !
+          !
+          ip http server
+          ip http secure-server
+          ip ssh bulk-mode 131072
+          !
+          no logging btrace
+          !
+          !
+          !
+          control-plane
+          !
+          !
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+           login
+           transport input ssh
+          !
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: SW1
+    node_definition: ioll2-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: -280
+    y: -40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: ios_config.txt
+        content: |-
+          Building configuration...
+
+          Current configuration : 926 bytes
+          !
+          ! Last configuration change at 03:09:48 UTC Wed Sep 24 2025
+          !
+          version 17.16
+          service timestamps debug datetime msec
+          service timestamps log datetime msec
+          !
+          hostname SW2
+          !
+          boot-start-marker
+          boot-end-marker
+          !
+          !
+          no logging console
+          no aaa new-model
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          ip audit notify log
+          ip audit po max-events 100
+          ip cef
+          login on-success log
+          no ipv6 cef
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          !
+          memory free low-watermark processor 79497
+          !
+          !
+          spanning-tree mode rapid-pvst
+          spanning-tree extend system-id
+          !
+          !
+          vlan internal allocation policy ascending
+          !
+          !
+          !
+          !
+          !
+          interface Ethernet0/0
+          !
+          interface Ethernet0/1
+          !
+          interface Ethernet0/2
+          !
+          interface Ethernet0/3
+          !
+          ip forward-protocol nd
+          ip forward-protocol udp
+          !
+          !
+          ip http server
+          ip http secure-server
+          ip ssh bulk-mode 131072
+          !
+          no logging btrace
+          !
+          !
+          !
+          control-plane
+          !
+          !
+          !
+          line con 0
+           exec-timeout 0 0
+           logging synchronous
+          line aux 0
+          line vty 0 4
+           exec-timeout 0 0
+           login
+           transport input ssh
+          !
+          !
+          end
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: SW2
+    node_definition: ioll2-xe
+    parameters: {}
+    ram: null
+    tags: []
+    x: 200
+    y: -40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        mac_address: null
+        type: loopback
+      - id: i1
+        label: Ethernet0/0
+        mac_address: null
+        type: physical
+        slot: 0
+      - id: i2
+        label: Ethernet0/1
+        mac_address: null
+        type: physical
+        slot: 1
+      - id: i3
+        label: Ethernet0/2
+        mac_address: null
+        type: physical
+        slot: 2
+      - id: i4
+        label: Ethernet0/3
+        mac_address: null
+        type: physical
+        slot: 3
+  - boot_disk_size: null
+    configuration:
+      - name: node.cfg
+        content: |-
+          # this is a shell script which will be sourced at boot
+          hostname PC2
+          # configurable user account
+          USERNAME=cisco
+          PASSWORD=cisco
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n5
+    image_definition: null
+    label: PC2
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: 360
+    y: -40
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+  - boot_disk_size: null
+    configuration:
+      - name: node.cfg
+        content: |-
+          # this is a shell script which will be sourced at boot
+          hostname PC1
+          # configurable user account
+          USERNAME=cisco
+          PASSWORD=cisco
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n6
+    image_definition: null
+    label: PC1
+    node_definition: desktop
+    parameters: {}
+    ram: null
+    tags: []
+    x: -440
+    y: -40
+    interfaces:
+      - id: i0
+        label: eth0
+        mac_address: null
+        type: physical
+        slot: 0
+links:
+  - id: l0
+    n1: n0
+    n2: n2
+    i1: i1
+    i2: i0
+    conditioning: {}
+    label: R1-Ethernet0/0<->Internet-port
+  - id: l1
+    n1: n0
+    n2: n1
+    i1: i2
+    i2: i2
+    conditioning: {}
+    label: R1-Ethernet0/1<->R2-Ethernet0/1
+  - id: l2
+    n1: n0
+    n2: n3
+    i1: i3
+    i2: i1
+    conditioning: {}
+    label: R1-Ethernet0/2<->SW1-Ethernet0/0
+  - id: l3
+    n1: n3
+    n2: n6
+    i1: i2
+    i2: i0
+    conditioning: {}
+    label: SW1-Ethernet0/1<->PC1-eth0
+  - id: l4
+    n1: n4
+    n2: n1
+    i1: i1
+    i2: i1
+    conditioning: {}
+    label: SW2-Ethernet0/0<->R2-Ethernet0/0
+  - id: l5
+    n1: n4
+    n2: n5
+    i1: i2
+    i2: i0
+    conditioning: {}
+    label: SW2-Ethernet0/1<->PC2-eth0
+lab:
+  description: 'A LAN network divided into 3 subnets for subnetting demostration '
+  notes: ''
+  title: 00 - CCNA - Subnetting
+  version: 0.3.0
